@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function(){
   $("button").click(function(){
     $("p").text("In Italy, there have been 35,713 cases and 2,978 deaths.");

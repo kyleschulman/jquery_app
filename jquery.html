@@ -32,19 +32,20 @@
 	<!--The jQuery library-->
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
 	<script>
-		$(document).ready(function() {
-			$("#italy").hover(function() {
+$(document).ready(function() {
+			$("#italy").click(function() {
 				$("#Italy").fadeOut(2000);
 			});
 		});
 		$(document).ready(function() {
-			$("#china").hover(function() {
+			$("#china").click(function() {
 				$("#China").fadeOut(2000);
 			});
 		});
 		$(document).ready(function() {
-			$("#washington").hover(function() {
+			$("#washington").click(function() {
 				$("#Washington").fadeOut(2000);
 			});
 		});
@@ -62,11 +63,10 @@
 			$("#germany").hover(function() {
 				$("#Germany").fadeOut(2000);
 			});
-		});
-	</script>
+		});</script>
 	<!--Site-specific JavaScript code using jQuery-->
 
-	<script src="script.js"></script>
+	<script src="jquery.js"></script>
 
 </body></html>
 
