@@ -1,11 +1,15 @@
 <html>
 
-  <head>
+<h1>Corona Virus Hotspots</h1>
+<p></p>
+
+<head>
 	<style>
 		img {
 			height: 200px;
-			width: auto;
+			width: 400px;
 		}
+
 	</style>
 </head>
 
@@ -34,51 +38,53 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 	<script>
-$(document).ready(function() {
+		$(document).ready(function() {
 			$("#italy").click(function() {
-				$("#Italy").fadeOut(2000);
-				 //$("Italy").text("In Italy, there have been 35,713 cases and 2,978 deaths.");
+				$("#Italy").fadeTo("slow", .4);
+				$("p").text("In Italy, there have been 35,713 cases and 2,978 deaths.");
 			});
 		});
+		$(document).ready(function() {
+			$("#italy").mouseleave(function() {
+				$("#Italy").fadeTo("slow", 1);
+				$("p").text("");
+			});
+		});
+
+
 
 
 		$(document).ready(function() {
 			$("#china").click(function() {
-				$("#China").fadeOut(2000);
+				$("#China").fadeTo("slow", .4);
 			});
 		});
 		$(document).ready(function() {
 			$("#washington").click(function() {
-				$("#Washington").fadeOut(2000);
+				$("#Washington").fadeTo("slow", .4);
 			});
 		});
 		$(document).ready(function() {
 			$("#ny").hover(function() {
-				$("#NY").fadeOut(2000);
+				$("#NY").fadeTo("slow", .4);
 			});
 		});
 		$(document).ready(function() {
 			$("#iran").hover(function() {
-				$("#Iran").fadeOut(2000);
+				$("#Iran").fadeTo("slow", .4);
 			});
 		});
 		$(document).ready(function() {
 			$("#germany").hover(function() {
-				$("#Germany").fadeOut(2000);
+				$("#Germany").fadeTo("slow", .4);
 			});
-		});</script>
+		});
+
+	</script>
 	<!--Site-specific JavaScript code using jQuery-->
 
 	<script src="jquery.js"></script>
 
-</body></html>
+</body>
 
-
-
-
-
-
-
-
-
-<h1>Corona Virus Hotspots</h1>
+</html>
