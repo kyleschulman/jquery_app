@@ -10,6 +10,19 @@
 			width: 400px;
 		}
 
+		#italy{
+			float:left;
+		}
+		#ny{
+			float: right;
+		}
+		#china{
+			float:right;
+		}
+		#germany{
+			float:left;
+
+		}
 	</style>
 </head>
 
@@ -53,29 +66,60 @@
 
 
 
-
 		$(document).ready(function() {
 			$("#china").click(function() {
 				$("#China").fadeTo("slow", .4);
+				$("p").text("In China, there have been 80,894 cases and 3,237 deaths.");
 			});
 		});
+		$(document).ready(function() {
+			$("#china").mouseleave(function() {
+				$("#China").fadeTo("slow", 1);
+				$("p").text("");
+			});
+		});
+
+
+
 		$(document).ready(function() {
 			$("#washington").click(function() {
 				$("#Washington").fadeTo("slow", .4);
+				$("p").text("In Washington, there have been 1,012 cases and 52 deaths.");
 			});
 		});
 		$(document).ready(function() {
-			$("#ny").hover(function() {
+			$("#washington").mouseleave(function() {
+				$("#Washington").fadeTo("slow", 1);
+				$("p").text("");
+			});
+		});
+
+
+
+		$(document).ready(function() {
+			$("#ny").click(function() {
 				$("#NY").fadeTo("slow", .4);
+				$("p").text("In New York, there have been 2,383 cases and 20 deaths.");
 			});
 		});
 		$(document).ready(function() {
-			$("#iran").hover(function() {
+			$("#ny").mouseleave(function() {
+				$("#NY").fadeTo("slow", 1);
+				$("p").text("");
+			});
+		});
+
+
+		$(document).ready(function() {
+			$("#iran").click(function() {
 				$("#Iran").fadeTo("slow", .4);
 			});
 		});
+
+
+
 		$(document).ready(function() {
-			$("#germany").hover(function() {
+			$("#germany").click(function() {
 				$("#Germany").fadeTo("slow", .4);
 			});
 		});
