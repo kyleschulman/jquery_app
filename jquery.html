@@ -1,28 +1,41 @@
 <html>
+<h2>Corona Virus Hotspots</h2>
 
-<h1>Corona Virus Hotspots</h1>
+<label for="itp">People infected:</label>
+<meter id="disk_c" value="8" min="0" max="10">2 out of 10</meter>
+
+<h4>Click on cities to see number of people infected in each</h4>
+
 <p></p>
 
 <head>
 	<style>
 		img {
-			height: 200px;
-			width: 400px;
+			height: 180px;
+			width: 360px;
 		}
 
-		#italy{
-			float:left;
+		#italy {
+			float: left;
 		}
-		#ny{
+
+		#ny {
 			float: right;
 		}
-		#china{
-			float:right;
+
+		#china {
+			float: right;
 		}
-		#germany{
-			float:left;
+
+		#germany {
+			float: left;
 
 		}
+
+		#washington {
+			float: right;
+		}
+
 	</style>
 </head>
 
@@ -64,8 +77,6 @@
 			});
 		});
 
-
-
 		$(document).ready(function() {
 			$("#china").click(function() {
 				$("#China").fadeTo("slow", .4);
@@ -78,8 +89,6 @@
 				$("p").text("");
 			});
 		});
-
-
 
 		$(document).ready(function() {
 			$("#washington").click(function() {
@@ -94,12 +103,11 @@
 			});
 		});
 
-
-
 		$(document).ready(function() {
 			$("#ny").click(function() {
 				$("#NY").fadeTo("slow", .4);
 				$("p").text("In New York, there have been 2,383 cases and 20 deaths.");
+
 			});
 		});
 		$(document).ready(function() {
@@ -109,18 +117,29 @@
 			});
 		});
 
-
 		$(document).ready(function() {
 			$("#iran").click(function() {
 				$("#Iran").fadeTo("slow", .4);
+				$("p").text("In Iran, there have been 17,361 cases and 1,135 deaths.");
 			});
 		});
-
-
+		$(document).ready(function() {
+			$("#iran").mouseleave(function() {
+				$("#Iran").fadeTo("slow", 1);
+				$("p").text("");
+			});
+		});
 
 		$(document).ready(function() {
 			$("#germany").click(function() {
 				$("#Germany").fadeTo("slow", .4);
+				$("p").text("In Germany, there have been 12,327 cases and 28 deaths.")
+			});
+		});
+		$(document).ready(function() {
+			$("#germany").mouseleave(function() {
+				$("#Germany").fadeTo("slow", 1);
+				$("p").text("");
 			});
 		});
 
